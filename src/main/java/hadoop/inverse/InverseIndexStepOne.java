@@ -68,7 +68,7 @@ public class InverseIndexStepOne {
 
         FileInputFormat.setInputPaths(job, new Path(args[0]));
 
-        // 删除已存在路径
+        // 删除路径
         Path outputPath = new Path(args[1]);
         FileSystem fs = FileSystem.get(conf);
         if (fs.exists(outputPath)) {
